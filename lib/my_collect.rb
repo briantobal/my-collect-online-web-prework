@@ -1,15 +1,13 @@
 
-
-
-def my_collect(array)
-  i = 0
-  collect = []
-  while i < array.length
-    collect << yield(array[i])
-    i+=1
+def my_collect (arr)
+  i = 0 
+  col = []
+  while i < arr.length 
+    col << yield(arr[i])
+    i+=1 
   end
-  collect
-end
+  col 
+end 
 
 # It should take in an argument of a collection
 # Iterate over that collection using a while loop
